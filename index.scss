@@ -1,0 +1,37 @@
+.card {
+  width: 1000px;
+  height: 1000px;
+  background-color: green;
+  float: left;
+}
+
+.tab-headings {
+  .tab-h {
+    border-bottom: 1px solid gray;
+    padding: 5px 20px;
+    float: left;
+  }
+}
+
+.tab-h.active {
+  border: 1px solid gray;
+  border-bottom: none;
+}
+
+.tab-h h3 {
+  margin: 0;
+}
+
+.tab-contents {
+  .tab-content {
+    p {
+      margin: 0;
+      width: 350px;
+    }
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}

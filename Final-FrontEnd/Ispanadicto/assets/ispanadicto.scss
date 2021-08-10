@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  .logo {
+    .logo-img {
+      max-width: 40px;
+      height: 40px;
+      margin-top: 10px;
+      margin-left: 80%;
+    }
+  }
+
+  .active-nav {
+    width: auto;
+    height: 40px;
+    background-color: #641d9e !important;
+    border-radius: 5px;
+    color: white !important;
+  }
+ 
+  .badges {
+    margin-left: 40%;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    .language {
+      background-color: #6d1fad !important;
+      color: white !important;
+      margin-right: 3%;
+      width: 30px;
+      height: 25px;
+    }
+    .white {
+      background-color: white !important;
+      color: #343a40 !important;
+      margin-right: 3%;
+    }
+  }
+  @media only screen and (min-width: 770px) and (max-width: 986px) {
+    .responsive {
+      display: block !important;
+    }
+    .responsive-lg {
+      display: none;
+    }
+    .badges {
+      margin-left: 65% !important;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+    .responsive {
+      display: block !important;
+    }
+    .responsive-lg {
+      display: none;
+    }
+    .badges {
+      margin-left: 60% !important;
+    }
+  }
+  @media only screen and (max-width: 510px) {
+    .responsive {
+      display: block !important;
+    }
+    .responsive-lg {
+      display: none;
+    }
+    .badges {
+      margin-left: 40px !important;
+    }
+  }
+  @media only screen and (min-width: 986px) {
+    .logo {
+      position: relative;
+      height: fit-content;
+
+      .logo-img {
+        max-width: 40px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 80%;
+      }
+      &::after {
+        position: absolute;
+        left: 120%;
+        content: "";
+        background-color: #dddddd;
+        width: 2px;
+        top: 35%;
+        height: 40%;
+      }
+    }
+  }
+  @media only screen and (max-width: 986px) {
+    .active {
+      color: white !important;
+      background-color: #591b88 !important;
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      text-align: center;
+      padding: 5px;
+      font-size: medium;
+    }
+    .deactive {
+      width: 100%;
+      height: 30px;
+      margin-top: 10px;
+      text-align: center;
+      padding: 5px;
+    }
+  }
+}
+main {
+  .main-section {
+    background-image: url(./images/ispana-bg.svg);
+    height: 800px;
+    width: 100%;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+  }
+ 
+
+  .input-icon {
+    position: absolute;
+    right: 4px;
+    top: 3px;
+    background-color: #8824d9;
+    color: #ffffff;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    .searchButton {
+      background-color: #8824d9;
+      border: none;
+      border-radius: 50%;
+      color: #ffffff;
+    }
+  }
+  .list {
+    background-color: #ffffff;
+    border-radius: 10px !important;
+    margin-top: 10px;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        border-radius: 10px !important;
+
+        p {
+          margin: 10px 10px 0 10px;
+          background-color: #f4f4f4;
+          padding: 10px 0 10px 5px;
+        }
+      }
+    }
+  }
+  .card-top {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+ 
+  .card {
+    width: 100%;
+  }
+  .card-row {
+    justify-content: space-around;
+  }
+
+  #card-1 {
+    border-left: 3px solid #a155ed;
+  }
+  #card-2 {
+    border-left: 3px solid #ed5555;
+  }
+  #card-3 {
+    border-left: 3px solid #5bd759;
+  }
+  #card-4 {
+    border-left: 3px solid #ff8a35;
+  }
+  #card-5 {
+    border-left: 3px solid #59d7cc;
+  }
+  #card-center {
+    border-top: 3px solid #431667;
+  }
+  #speaker{
+    color: #431667;
+  }
+  @media only screen and (max-width: 986px) {
+    .main-section {
+      background-image: url(./images/ispana-bg.svg);
+      height: 800px;
+      width: 100%;
+      background-color: white;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+  }
+  @media only screen and (max-width: 985px) {
+    .card-top {
+      margin-right: 0;
+    }
+  }
+}
+.footer {
+  // display: block;
+  height: 150px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-image: url("data:image/png;base64,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ACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACAIARgAAAAAAAAgCAEYAAAAAAAAIAgBGAAAAAAAACCI/wD3u9cMunbo0QAAAABJRU5ErkJggg==");
+  .law {
+    float: left;
+    margin-left: 65px;
+    margin-top: 85px !important;
+    color: #6c757d !important;
+    font-size: 17px;
+  }
+  .social {
+    i {
+      margin-right: 15px;
+    }
+    font-size: 27px;
+    margin-right: 65px;
+    margin-top: 75px;
+    float: right;
+    color: #48176f;
+  }
+}
